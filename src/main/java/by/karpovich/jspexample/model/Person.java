@@ -1,2 +1,11 @@
-package by.karpovich.jspexample.model;public class Person {
+package by.karpovich.jspexample.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@AllArgsConstructor
+@Data
+public class Person {
+    private String name;
+    private int age;
 }

@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class PersonService {
+public class PersonServiceImpl implements PersonService{
     private List<Person> persons = new ArrayList<>();
     public void save(Person person){
         persons.add(person);
