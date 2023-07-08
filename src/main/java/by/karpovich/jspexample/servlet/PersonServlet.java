@@ -27,8 +27,8 @@ public class PersonServlet extends HttpServlet {
         var name = req.getParameter("name");
         var age = Integer.parseInt(req.getParameter("age"));
         var newPerson = new Person(name, age);
-        personServiceImpl.save(newPerson);
-        req.setAttribute("people", personServiceImpl.findAll());
+        personService.save(newPerson);
+        req.setAttribute("people", personService.findAll());
         req.getRequestDispatcher("people.jsp").forward(req, resp);
     }
 }
